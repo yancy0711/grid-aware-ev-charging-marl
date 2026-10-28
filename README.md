@@ -2,9 +2,7 @@
 
 Selected reference code accompanying [Cooperative multi-agent reinforcement learning for grid-aware EV charging management with cross-site redirection](https://doi.org/10.1016/j.egyai.2025.100664).
 
-The study coordinates public EV charging sites using cooperative multi-agent reinforcement learning. It combines public charging demand with simulated domestic EV load, and uses acceptance and cross-site redirection decisions to balance charging service and grid peak demand in Perth and Kinross, Scotland.
-
-This repository shares the core environment, policy networks and training workflow for inspection and adaptation. It is a **partial research code release**, rather than a complete reproduction package: datasets, preprocessing and analysis workflows, trained weights, logs and experiment outputs are not included.
+The study coordinates public EV charging sites using cooperative multi-agent reinforcement learning. It combines public charging demand with simulated domestic EV load, and uses acceptance and cross-site redirection decisions to balance charging service and grid peak demand in Perth and Kinross, Scotland. This repository shares the core environment, policy networks and training workflow for inspection and adaptation.
 
 ## Code structure
 
