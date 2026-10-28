@@ -15,8 +15,6 @@ The study coordinates public EV charging sites using cooperative multi-agent rei
 │   └── train_maddpg.py          # Weekday/weekend/mixed training workflow
 ├── utils/
 │   └── home.py                  # Synthetic domestic EV charging load
-├── tools/
-│   └── check_release.py         # Check the publication file list and source syntax
 ├── env.py                      # Charging queues, capacity, redirection and rewards
 ├── rl_charge_extensions.py     # Graph encoder, adjacency and delayed replay
 ├── environment.yml             # Dependencies for the selected code
@@ -46,14 +44,6 @@ For a compatible local weekday dataset, the training entry point is:
 ```bash
 mkdir -p params saved_results
 python train/train_maddpg.py --train_mode weekday --pkl_weekday ./data/events_augmented_weekday.pkl --episodes 500
-```
-
-On PowerShell, create the output directories with `New-Item -ItemType Directory -Force params, saved_results`. The command above illustrates the entry point; it is not a validated reproduction recipe. Training writes logs, weights, plots and serialized results locally. The publication allowlist in `.gitignore` excludes these outputs and any new files until explicitly added to the allowlist.
-
-To check the selected release files without installing the training dependencies:
-
-```bash
-python tools/check_release.py
 ```
 
 ## Citation
