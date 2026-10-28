@@ -1,0 +1,24 @@
+# Publication allowlist: everything is private unless explicitly listed below.
+# Never use `git add -f` to bypass this list for datasets or generated artifacts.
+*
+
+!/.gitignore
+!/README.md
+!/CITATION.cff
+!/LICENSE
+!/environment.yml
+!/env.py
+!/rl_charge_extensions.py
+
+!/agents/
+!/agents/maddpg.py
+!/agents/single_agent.py
+
+!/train/
+!/train/train_maddpg.py
+
+!/utils/
+!/utils/home.py
+
+!/tools/
+!/tools/check_release.py
